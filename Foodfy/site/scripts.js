@@ -37,3 +37,7 @@ for(let receita of receitas){
 document.querySelector('.close-modal').addEventListener("click", function(){
   modalOverlay.classList.remove('active');
 });
+
+function fecharModal(){
+  modalOverlay.classList.remove('active');
+}
