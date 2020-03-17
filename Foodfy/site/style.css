@@ -12,11 +12,151 @@ header{
 }
 
 header div{
-  margin-left: 195px;
+  margin-left: 764px;
 }
 
 header div a{
-  margin: 30px;
+  text-decoration: none;
+}
+
+.links{
   text-decoration: none;
   color: #111;
+  margin-top: 5px;
+  position: static;
+  margin-left: 50px;
+}
+
+.alinhamento{
+  margin-left: 800px;
+}
+
+.container-ini{
+  max-width: 940px;
+  height: 366px;
+  background-color: #FBDFDB;
+  border-radius: 30px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.container-ini-texto h1{
+  margin-left: 60px;
+  margin-top: 117px;
+}
+
+.container-ini-texto p{
+  margin-left: 60px;
+  margin-top: 117px;
+}
+
+.container-ini-texto p{
+  margin-top: 10px;
+  width: 316px;
+  height: 84px;
+}
+
+.container-ini img{
+  margin-left: 150px;
+  margin-top: 66px;
+}
+
+.mais-acessadas{
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+
+.receitas{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  max-width: 940px;
+}
+
+.receita h2{
+  margin-top: 20px;
+}
+
+.receita p{
+  margin-top: 5px;
+  color: #777;
+  margin-bottom: 30px;
+}
+
+.receita-image-container img{
+  width: 100%;
+  border-radius: 15px;
+}
+
+.alinhamento-sobre{
+  margin-top: 14px;
+}
+
+.texto-sobre{
+  width: 940px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.subtitulo-sobre{
+  margin-top: 30px;
+}
+
+/* === MODAL === */
+
+.modal-overlay{
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  opacity: 1;
+  visibility: hidden;
+}
+
+.modal{
+  background-color: white;
+  width: 26%;
+  height: 45%;
+  margin: 25vh auto;
+  position: relative;
+  border-radius: 16px;
+}
+
+.modal-overlay.active{
+  opacity: 1;
+  visibility: visible;
+}
+
+.close-modal{
+  color: #999;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 60px;
+}
+
+.modal-image{
+  padding: 30px;
+  width: 600px;
+  height: 200px;
+  border-radius: 50px;
+}
+
+.modal-dono{
+  text-align: center;
+  margin-top: 5px;
+  color: #777;
+}
+
+.modal-comida{
+  text-align: center;
+}
+
+footer{
+  background-color: #eee;
+  text-align: center;
+  padding: 30px;
+  color: #999;
+  font-size: 14px;
+  margin-top: 50px;
 }
