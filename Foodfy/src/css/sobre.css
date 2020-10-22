@@ -1,0 +1,10 @@
+.sobre h1 {
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+  font-size: 24px;
+}
+
+.sobre p {
+  margin-bottom: 1rem;
+  font-size: 18px;
+}

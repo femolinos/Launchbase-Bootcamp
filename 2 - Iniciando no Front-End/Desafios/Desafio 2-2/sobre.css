@@ -1,58 +1,84 @@
-@import "https://fonts.googleapis.com/css?family=Roboto&display=swap";
+@import 'https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap';
 
-*{
-  margin: 0;
+:root {
+  --color-green: #50FA7B;
+}
+
+* {
   padding: 0;
+  margin: 0;
   border: 0;
 }
 
-body{
+body {
+  background: #282A36;
   font-family: 'Roboto', sans-serif;
-  background: #282a36;
+  color: #FFFFFF;
+}
+
+body header {
+  padding: 30px;
   text-align: center;
-  color: white;
+  background: rgba(0, 0, 0, 0.274);
+  border-bottom: 2px solid #333;
 }
 
-body img{
-  margin-top: 32px;
-}
-
-body h1{
-  margin-top: 30px;
-}
-
-body p{
-  margin-top: 15px;
-  font-size: 20px;
-}
-
-body ul{
-  margin-top: 15px;
-}
-
-body ul li{
-  padding: 5px;
-  font-size: 15px;
-}
-
-header{
-  padding: 32px;
-  background: rgba(0, 0, 0, 0.1);
-  border-bottom: 1px solid #333;
-}
-
-header div{
-  text-align: center;
-}
-
-header div a{
-  color: white;
+body header a {
+  color: #FFFFFF;
   text-decoration: none;
-  margin: 0 30px;
-  transition: color 200ms;
+  padding: 0 30px;
+  transition: color 1s;
 }
 
-header div a:hover{
-  color: #50fa7b;
-  transition: color 200ms;
+body header a:hover {
+  color: var(--color-green);
+  transition: color 1s;
+}
+
+#content {
+  text-align: center;
+  min-height: calc(100vh - 81px - 81px);
+}
+
+#content img {
+  border-radius: 50%;
+  margin: 30px 0;
+  border: 2px solid #8138a3;
+}
+
+#content h1 {
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+#content h2 {
+  margin-bottom: 20px;
+  font-weight: normal;
+}
+
+#techs ul {
+  margin-top: 20px;
+}
+
+#techs ul li {
+  margin-bottom: 10px;
+}
+
+footer {
+  padding: 30px;
+  text-align: center;
+  background: rgba(0, 0, 0, 0.274);
+  border-bottom: 2px solid #333;
+}
+
+footer a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 30px;
+  transition: color 1s;
+}
+
+footer a:hover {
+  color: var(--color-green);
+  transition: color 1s;
 }

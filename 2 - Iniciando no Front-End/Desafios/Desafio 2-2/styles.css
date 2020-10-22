@@ -1,0 +1,21 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: #282A36;
+  font-family: 'Roboto', sans-serif;
+}
+
+body header {
+  padding: 30px;
+  text-align: center;
+}
+
+body header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 30px;
+}
