@@ -1,0 +1,34 @@
+:root {
+  --color-green: #50FA7B;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+
+}
+
+body {
+  background: #282A36;
+  font-family: 'Roboto', sans-serif;
+}
+
+body header {
+  padding: 30px;
+  text-align: center;
+  border-bottom: 1px solid black;
+  background: #2d2f3b;
+}
+
+body header a {
+  color: #FFFFFF;
+  text-decoration: none;
+  padding: 0 30px;
+  transition: color .2s;
+}
+
+body header a:hover {
+  color: var(--color-green);
+  transition: color .2s;
+}
