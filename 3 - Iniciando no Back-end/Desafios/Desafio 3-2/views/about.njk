@@ -1,0 +1,24 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Sobre</title>
+  <link rel="stylesheet" href="sobre.css">
+{% endblock %}
+
+{% block content %}
+
+  <div id="content">
+    <img src="{{about.img_url}}" alt="logo-rocketseat">
+    <h1>{{about.name}}</h1>
+    <h2>{{about.subtitle}}</h2>
+    <p>{{about.description}}</p>
+    <div id="techs">
+      <ul>
+        {% for tech in about.techs %}
+          <li>{{tech.tech_name}}</li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div>
+
+{% endblock %}

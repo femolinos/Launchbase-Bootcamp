@@ -1,0 +1,37 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>Conteúdos</title>
+  <link rel="stylesheet" href="conteudos.css">
+{% endblock %}
+
+{% block content %}
+
+  <section class="posts">
+    {%for post in posts %}
+      <div class="post">
+        <img src="{{post.url}}" alt="Foto do post">
+        <h2>{{post.title}}</h2>
+        <div class="info-post">
+          <p>{{post.author}}</p>
+          <p>{{post.duration}}</p>
+        </div>
+      </div>
+    {% endfor %}
+  </section>
+
+  <div class="modal-overlay">
+    <div class="modal">
+      <a class="close-modal">
+        <i class="material-icons">close</i>
+      </a>
+
+      <div class="modal-content">
+        <iframe src="" frameborder="0"></iframe>
+      </div>
+    </div>
+  </div>
+
+  <script src="./conteudo.js"></script>
+
+{% endblock %}
