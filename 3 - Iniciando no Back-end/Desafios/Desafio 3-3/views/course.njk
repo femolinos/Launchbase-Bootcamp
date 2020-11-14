@@ -1,0 +1,21 @@
+{% extends "layout.njk" %}
+
+{% block head %}
+  <title>{{course.title}}</title>
+  <link rel="stylesheet" href="/course.css">
+{% endblock %}
+
+{% block content %}
+
+  <section>
+    <div class="card-post">
+      <img src="{{course.url}}" alt="Foto do post">
+      <h2>{{course.title}}</h2>
+      <div class="info-course">
+        <p>{{course.author}}</p>
+        <p>{{course.duration}}</p>
+      </div>
+    </div>
+  </section>
+
+{% endblock %}
