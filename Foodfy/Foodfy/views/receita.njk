@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="/css/main.css">
+    <link rel="stylesheet" href="/css/receita.css">
+
+    <title>Receita de {{receita.title}} - Foodfy</title>
+  </head>
+
+  <div class="conteudo">
+    <header>
+      <a href="/">
+        <img src="/images/logo.png" alt="Logo do Foodfy"></a>
+      <div class="links">
+        <a href="/about">Sobre</a>
+        <a href="/recipes" class="clicado">Receitas</a>
+      </div>
+    </header>
+
+    <div class="receita">
+
+      <img src="{{receita.image}}" alt="Imagem de {{receita.title}}">
+
+      <div class="container-info">
+        <h1>{{receita.title}}</h1>
+        <p>{{receita.author}}</p>
+      </div>
+
+      <div class="ingredientes">
+        <div class="subtitulo" id="ingredientes">
+          <h2>Ingredientes</h2>
+          <p>Esconder</p>
+        </div>
+        <ul id="ingredientes-content">
+          {% for ingredientes in receita.ingredients %}
+            <li>{{ingredientes}}</li>
+          {% endfor %}
+        </ul>
+      </div>
+
+      <div class="modo-preparo">
+        <div class="subtitulo" id="modo-preparo">
+          <h2>Modo de preparo</h2>
+          <p>Esconder</p>
+        </div>
+        <ol id="modo-preparo-content">
+          {% for preparo in receita.preparation %}
+            <li>{{preparo}}</li>
+          {% endfor %}
+        </ol>
+      </div>
+
+      <div class="info-adicional">
+        <div class="subtitulo" id="info-adicional">
+          <h2>Informações adicionais</h2>
+          <p>Esconder</p>
+        </div>
+        <p id="info-adicional-content">
+          {{receita.information}}
+        </p>
+      </div>
+    </div>
+  </div>
+
+  <footer>
+    <p>Todos os direitos reservados, receitas Foodfy.</p>
+  </footer>
+
+  <script src="/scripts/receita-detalhe.js"></script>
+</html>

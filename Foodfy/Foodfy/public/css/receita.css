@@ -1,0 +1,50 @@
+.container-info {
+  text-align: center;
+  margin: 40px auto;
+}
+
+.subtitulo {
+  display: flex;
+  align-items: baseline;
+}
+
+.subtitulo p {
+  margin-left: 10px;
+  font-size: 15px;
+  color: #777777;
+  cursor: pointer;
+}
+
+.ingredientes h2 {
+  margin-bottom: 20px;
+}
+
+.ingredientes ul li {
+  margin: 0 17px;
+  line-height: 28px;
+}
+
+.modo-preparo h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.modo-preparo ol li {
+  margin: 0 17px;
+  line-height: 28px;
+}
+
+.info-adicional h2 {
+  margin-top: 30px;
+  margin-bottom: 20px;
+}
+
+.info-adicional p {
+  color: black;
+  margin-bottom: 50px;
+  line-break: auto;
+}
+
+.escondido {
+  opacity: 0;
+}
