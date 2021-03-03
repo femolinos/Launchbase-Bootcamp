@@ -1,0 +1,14 @@
+{
+  "teachers": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Felipe Molinos",
+      "birth": 944784000000,
+      "education_level": "highschool",
+      "class_type": "present",
+      "acting_field": "Programação",
+      "created_at": 1614791684228
+    }
+  ]
+}

@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root {
+  --color-green: #50FA7B;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}
+
+body {
+  background: #282A36;
+  font-family: 'Roboto', sans-serif;
+}
+
+body header {
+  width: 100%;
+  padding: 32px;
+  text-align: center;
+  background: #2d2f3b;
+  box-sizing: border-box;
+  border-bottom: 1px solid #000;
+}
+
+body header a {
+  text-decoration: none;
+  color: #FFF;
+  position: relative;
+  transition: color 200ms;
+}
+
+body header a + a {
+  margin-left: 32px;
+}
+
+body header a:hover {
+  color: var(--color-green);
+  transition: color 200ms;
+}
+
+body header a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background-color: var(--color-green);
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  transition: width 200ms ease-in-out;
+}
+
+body header a:hover::after {
+  width: 100%;
+  transition: width 200ms ease-in-out;
+}
+
+.card {
+  width: 800px;
+  min-height: 400px;
+  background-color: white;
+  margin: 45px auto;
+  display: grid;
+  grid-template-columns: 40% 60%;
+
+  box-shadow: 10px 10px 6px -2px rgba(0, 0, 0, 0.7);
+
+  animation: up 200ms ease;
+}
+
+@keyframes up {
+  from {
+    opacity: 0;
+    transform: translateY(15px);
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+
+.card .image {
+  background: url(https://source.unsplash.com/collection/56221187/500x500) no-repeat center center / cover;
+}
+
+.details {
+  padding: 32px;
+}
+
+.title {
+  text-transform: uppercase;
+  color: #555;
+  font-weight: bold;
+  letter-spacing: 0.7px;
+  font-size: 24px;
+}
+
+.item {
+  padding: 16px 0;
+}
+
+.item:last-child {
+  border: none;
+}
+
+.item div:nth-child(1) {
+  color: #555;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.item div:nth-child(2) {
+  font-size: 18px;
+  margin-left: 16px;
+}
+
+.item span {
+  background-color: #F7DF1E;
+  border-radius: 16px;
+  padding: 8px 8px;
+  margin: 5px;
+  display: inline-block;
+}
+
+input {
+  width: 100%;
+  border-bottom: 1px solid black;
+  outline: none;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+input[type="radio"] {
+  width: initial;
+  margin-right: 4px;
+}
+
+select {
+  padding: 10px;
+  outline: none;
+  font-weight: bold;
+}
+
+select option {
+  font-weight: bold;
+}
+
+button[type="submit"] {
+  padding: 8px 32px;
+  border-radius: 4px;
+  background-color: #7159C1;
+  color: white;
+  width: 100%;
+  margin-top: 32px;
+}

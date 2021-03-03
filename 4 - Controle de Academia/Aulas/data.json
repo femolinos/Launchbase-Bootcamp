@@ -1,0 +1,22 @@
+{
+  "instructors": [
+    {
+      "id": 1,
+      "avatar_url": "http://google.com",
+      "name": "Felipe Molinos",
+      "birth": 944784000000,
+      "gender": "M",
+      "services": "sdfas",
+      "created_at": 1614617619610
+    },
+    {
+      "id": 2,
+      "avatar_url": "http://google.com",
+      "name": "Felipe Molinos",
+      "birth": 944784000000,
+      "gender": "M",
+      "services": "sadfa",
+      "created_at": 1614617671548
+    }
+  ]
+}
